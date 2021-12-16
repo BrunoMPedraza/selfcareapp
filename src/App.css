@@ -34,3 +34,23 @@
 .person{
   z-index:99;
 }
+.bob{
+  position: absolute;
+  left: 58rem;
+  top: 23rem;
+  background-color: transparent;
+  z-index: 10;
+
+}
+.safari{
+  position: absolute;
+  background-color: transparent;
+  left: 38rem;
+  top: 18rem;
+}
+.saloongirl{
+  background-color: transparent;
+  position: absolute;
+  right: 71rem;
+  top: 6rem;
+}
