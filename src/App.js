@@ -1,8 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import Person from './components/Person';
-import Food from './components/Food';
-import PeopleContainer from './components/PeopleContainer';
 import Board from './components/Board';
 import Pj from './components/Pj';
 
@@ -21,11 +17,31 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-      <Board/>
-        <Pj nombre={'bob'} imagenDeCara={bobcara} imagen={bob}/>
-        <Pj nombre={'safari'} imagenDeCara={safaricara} imagen={safarigirl} />
-        <Pj nombre={'saloongirl'} imagenDeCara={salooncara} imagen={saloongirl}/>
-      
+      <Board />
+      <Pj 
+      profesion={'taxiboy'} 
+      nombre={'bob'} 
+      imagenDeCara={bobcara} 
+      imagen={bob} 
+      fumador={false}
+      />
+
+      <Pj 
+      profesion='puta' 
+      nombre={'safari'} 
+      imagenDeCara={safaricara} 
+      imagen={safarigirl} 
+      fumador={true}
+      />
+
+      <Pj 
+      profesion='puta' 
+      nombre={'saloongirl'} 
+      imagenDeCara={salooncara} 
+      imagen={saloongirl} 
+      fumador={true}
+      />
+
       {/* <Person nombre="Brunete" imagenCompleta={safarigirl} imagenCara={safaricara}/>
       <Person nombre="Betunia"  imagenCompleta={bob} imagenCara={bobcara}/>
       <Person/>

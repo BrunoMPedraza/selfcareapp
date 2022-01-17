@@ -2,13 +2,12 @@ import { Button, Modal } from "react-bootstrap";
 import React,{useState} from "react";
 
 
-const Pj = ({ imagen, nombre,imagenDeCara }) => {
+const Pj = ({ imagen, nombre,imagenDeCara, profesion }) => {
     const [smShow, setSmShow] = useState(false);
 
   return (
     <div>
       <img onClick={() => setSmShow(true)} className={nombre} src={imagen} alt="" />
-
       <Modal
         size="sm"
         show={smShow}
@@ -21,7 +20,9 @@ const Pj = ({ imagen, nombre,imagenDeCara }) => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
+          <p>Profesión: {profesion} </p>
             <img src={imagenDeCara} alt="" />
+        {nombre === 'bob' ? 'soy bob carajo' : 'Hola!'}
         </Modal.Body>
       </Modal>
 
